@@ -1,0 +1,13 @@
+use HTML::Readability;
+
+my $docOff = new HTML::Readability();
+$docOff->url($hop);
+
+$docOff->getHTML();
+$docOff->initDoc();
+
+my $content = $docOff->getFinalContent();
+my $title = $docOff->getTitle();
+
+
+# Sorry for no comments code, 
